@@ -24,8 +24,8 @@ public class DiamondDiggerEnchantment extends EnchantmentData implements Listene
 
     public double getChanceByLevel() {
         return switch (getLevel()) {
-            case 1 -> .1; // 0.25 * 100 = 25%
-            case 2 -> .25; // 0.5 * 100 = 50%
+            case 1 -> .1; // 0.1 * 100 = 10%
+            case 2 -> .25; // 0.25 * 100 = 25%
             default -> .0; // 0.0 * 100 = 0%
         };
     }
