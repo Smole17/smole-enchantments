@@ -1,0 +1,34 @@
+diamond_digger_1:
+  ==: ru.smole.enchantments.data.impl.DiamondDiggerEnchantment
+  id: diamond_digger
+  level: 1
+  display: "§bАлмазный добытчик I"
+  item:
+    ==: org.bukkit.inventory.ItemStack
+    v: 3337
+    type: BOOK
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: "§bАлмазный добытчик I"
+      lore:
+        - "§8Топовая книжка, которая позволит вам"
+        - "§8со случайным шансом выкопать алмазикс"
+        - "§8с блока! Я серьёзно."
+diamond_digger_2:
+  ==: ru.smole.enchantments.data.impl.DiamondDiggerEnchantment
+  id: diamond_digger
+  level: 2
+  display: "§bАлмазный добытчик II"
+  item:
+    ==: org.bukkit.inventory.ItemStack
+    v: 3337
+    type: BOOK
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: "§bАлмазный добытчик II"
+      lore:
+        - "§8ЕЩЁ ОДНА ТОПОВАЯ книжка, которая позволит вам"
+        - "§8со БОЛЬШИМ ШАНСОМ выкопать 2 АЛМАЗИКСА"
+        - "§8с блока! Я серьёзно говорю."

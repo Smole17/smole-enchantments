@@ -1,0 +1,30 @@
+plugins {
+    id "java"
+    id "net.minecrell.plugin-yml.bukkit" version "0.6.0"
+    id "io.papermc.paperweight.userdev" version "1.5.9-SNAPSHOT"
+}
+
+var pluginName = "SmoleEnchantments"
+group = "ru.smole.enchantments"
+version = "1.0-SNAPSHOT"
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    paperweightDevelopmentBundle "io.papermc.paper:dev-bundle:1.19.4-R0.1-SNAPSHOT"
+}
+
+bukkit {
+    name = pluginName
+    version = this.version
+    main = "${group}.$pluginName"
+    apiVersion = "1.19"
+}
+
+jar {
+    from("LICENSE")
+}
+
+tasks.withType(JavaCompile)*.options*.encoding = "UTF-8"
